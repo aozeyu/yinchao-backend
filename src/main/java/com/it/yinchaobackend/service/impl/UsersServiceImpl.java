@@ -26,4 +26,9 @@ public class UsersServiceImpl implements UsersService {
     public User findById(Long id) {
         return usersDao.finById(id);
     }
+
+    @Override
+    public User login(User user) {
+        return usersDao.login(user);
+    }
 }

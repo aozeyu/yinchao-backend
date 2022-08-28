@@ -15,10 +15,8 @@
     <select id="finById" resultType="com.it.yinchaobackend.entity.User" parameterType="java.lang.Long" resultMap="UsersMap">
         select * from users where user_id= #{id}
     </select>
-
-
-
-
-
+    <select id="login" resultType="com.it.yinchaobackend.entity.User" parameterType="com.it.yinchaobackend.entity.User" resultMap="UsersMap">
+        select * from users u where u.name = #{name} and password = #{password}
+    </select>
 </mapper>
 

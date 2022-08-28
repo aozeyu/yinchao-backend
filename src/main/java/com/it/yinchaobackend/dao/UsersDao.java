@@ -1,6 +1,7 @@
 package com.it.yinchaobackend.dao;
 
 import com.it.yinchaobackend.entity.User;
+import com.it.yinchaobackend.utils.ResultUtil;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
@@ -14,5 +15,8 @@ public interface UsersDao {
 
 
     User finById(Long id);
+
+
+    User login(User user);
 }
 
